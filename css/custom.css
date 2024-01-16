@@ -1072,16 +1072,24 @@ img {
 }
 
 .report_box {
-  padding: 136px 65px 50px;
+  display: flex;
   background-color: #45695C;
-  text-align: center;
   position: relative;
   min-height: 400px;
 }
 
+.report_box:hover .report_img_box>img {
+  transform: scale(1.1);
+}
+
+.report_info {
+  padding: 40px 35px 40px 85px;
+  position: relative;
+}
+
 .report_icon {
-  width: 168px;
-  height: 168px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   padding: 5px;
   display: inline-flex;
@@ -1090,18 +1098,32 @@ img {
   border: 1px solid #fff;
   background-color: #45695C;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -55px;
+  left: 0px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+.report_img_box {
+  width: 340px;
+  flex: 0 0 auto;
+  overflow: hidden;
+}
+
+.report_img_box>img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: all 500ms ease-in-out;
 }
 
 .report_icon>img {
-  max-width: 65px;
+  max-width: 55px;
 }
 
 .report_box .report_name {
   color: #FFF;
-  text-align: center;
+  /* text-align: center; */
   font-family: "Quincy";
   font-size: 26px;
   font-style: normal;
@@ -1113,10 +1135,7 @@ img {
 
 .report_box .report_dtls {
   color: #ffffffe6;
-  text-align: center;
   line-height: 27px;
-  max-width: 978px;
-  margin: 0 auto;
   opacity: 0.72;
   font-weight: 400;
 }
@@ -1533,7 +1552,6 @@ footer p {
   font-style: normal;
   font-weight: 400;
   line-height: 42px;
-  /* 95.455% */
   letter-spacing: -0.44px;
   margin-bottom: 34px;
 }
@@ -1546,7 +1564,6 @@ footer p {
   font-style: normal;
   font-weight: 400;
   line-height: 25px;
-  /* 156.25% */
   letter-spacing: -0.16px;
   max-width: 657px;
   margin: auto;
@@ -1573,7 +1590,6 @@ footer p {
   font-style: normal;
   font-weight: 600;
   line-height: 25px;
-  /* 86.207% */
   letter-spacing: -0.29px;
 }
 
@@ -1693,7 +1709,6 @@ footer p {
   font-style: normal;
   font-weight: 400;
   line-height: 42px;
-  /* 95.455% */
   letter-spacing: -0.44px;
   margin-bottom: 20px;
 }
@@ -1706,7 +1721,6 @@ footer p {
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
-  /* 168.75% */
   margin: auto;
   max-width: 872px;
   margin-bottom: 135px;
@@ -1720,7 +1734,6 @@ footer p {
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
-  /* 168.75% */
   opacity: 0.89;
 }
 
@@ -1766,7 +1779,6 @@ footer p {
   font-style: normal;
   font-weight: 400;
   line-height: 29px;
-  /* 107.407% */
   margin-bottom: 65px;
 }
 
@@ -1777,7 +1789,6 @@ footer p {
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
-  /* 168.75% */
   opacity: 0.72;
 }
 
@@ -1799,7 +1810,6 @@ footer p {
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
-  /* 107.407% */
 }
 
 .bend_hg p {
@@ -1809,7 +1819,6 @@ footer p {
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
-  /* 168.75% */
   opacity: 0.72;
 }
 
@@ -1906,7 +1915,6 @@ footer p {
   font-style: normal;
   font-weight: 400;
   line-height: 25px;
-  /* 156.25% */
   letter-spacing: -0.16px;
   opacity: 0.72;
 }
@@ -1977,4 +1985,93 @@ footer p {
   counter-reset: section;
 }
 
+.rep_pic>img {
+  position: relative;
+  z-index: 1;
+}
+
 /* 15-01-2024 end-- */
+
+
+/* faq page start - 16/01/24 */
+.faq_bnr {
+  position: relative;
+}
+
+.abso_faq_bnr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.faq_bnr_txt h1 {
+  max-width: 594px;
+  color: #FFF;
+  font-family: "Quincy";
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 70px;
+  letter-spacing: -0.71px;
+}
+
+.faq_wev>img {
+  width: 100%;
+}
+
+.faq_sec {
+  margin-top: -90px;
+  position: relative;
+}
+
+.faq_wrp {
+  background: #EDFFF8;
+  padding-bottom: 200px;
+}
+
+.faq_wrp .faq_hdr {
+  max-width: 850px;
+  margin: 0 auto;
+  color: #1D2D27;
+  text-align: center;
+  font-family: "Quincy";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: -0.32px;
+  padding-bottom: 90px;
+}
+
+.faq_box {
+  border: 1px solid rgb(75 171 132 / 20%);
+  background: rgb(217 255 240 / 20%);
+  padding: 40px 70px;
+}
+
+.faq_box+.faq_box {
+  margin-top: 20px;
+}
+
+.faq_box .question {
+  color: #1D2D27;
+  font-family: "Quincy";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: -0.26px;
+  padding-bottom: 23px;
+}
+
+.faq_box .ans {
+  color: #14211C;
+  line-height: 25px;
+  letter-spacing: -0.16px;
+}
+
+/* faq page end - 16/01/24 */

@@ -267,7 +267,7 @@
         top: 0px;
         right: 0;
         bottom: 0;
-        padding: 100px 0px 0px 40px;
+        padding: 80px 0px 0px 40px;
         background-color: #92CCB7;
         width: 300px;
         z-index: 99;
@@ -491,6 +491,27 @@
         line-height: 40px;
     }
 
+    .report_box {
+        flex-direction: column;
+    }
+
+    .report_img_box {
+        width: 100%;
+    }
+
+    .report_img_box>img {
+        max-height: 500px;
+    }
+
+    .report_info {
+        padding: 85px 35px 40px;
+    }
+
+    .report_icon {
+        top: 0;
+        left: 50%;
+    }
+
     /* helth report */
 
     /* home page 15.01.23 */
@@ -571,7 +592,15 @@
     /* services page strt 15.01.2024-- */
 }
 
-@media (max-width: 1024px) {}
+@media (max-width: 1024px) {
+    .report_box_wrp {
+        margin-top: 100px;
+    }
+
+    .report_box_wrp::after {
+        top: -90px;
+    }
+}
 
 @media (max-width: 767px) {
 
@@ -634,16 +663,6 @@
     .report_area .report_hdng {
         font-size: 25px;
         line-height: 38px;
-    }
-
-    .report_box {
-        padding: 136px 20px 35px;
-    }
-
-    .report_icon {
-        width: 150px;
-        height: 150px;
-        top: -60px;
     }
 
     /* helth report */
@@ -948,11 +967,11 @@
     }
 
     .report_box_wrp {
-        margin-top: 140px;
+        margin-top: 50px;
     }
 
     .report_box_wrp::after {
-        top: -140px;
+        top: -50px;
     }
 
     .hlt_bnr_txt h1 {
@@ -966,9 +985,17 @@
     }
 
     .report_more_info p+p {
-        margin-top: 27px;
+        margin-top: 22px;
     }
 
+    .report_info {
+        padding: 85px 18px 20px;
+        text-align: center;
+    }
+
+    .report_box+.report_box {
+        margin-top: 85px;
+    }
     /* helth report */
 
     /* home page */
