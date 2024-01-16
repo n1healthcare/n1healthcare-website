@@ -104,11 +104,6 @@
         max-width: 500px;
     }
 
-    .offeringsect.cliniciansect .officon {
-        width: 80px;
-        height: 80px;
-    }
-
     .loginbtn {
         margin-left: 40px;
     }
@@ -432,7 +427,7 @@
     }
 
     footer .formflex .form-control {
-        width: 200px;
+        width: 220px;
     }
 
     .footheading h2 {
@@ -450,12 +445,6 @@
 
     .offeringsect.cliniciansect .offcont {
         max-width: 350px;
-    }
-
-    .offeringsect.cliniciansect .officon {
-        width: 60px;
-        height: 60px;
-        padding: 15px;
     }
 
     .pioneeringsection.whaitbg {
@@ -481,6 +470,27 @@
 
     .offeringsect.cliniciansect .offeringheading {
         margin: 0px auto 50px;
+    }
+
+    .offeringsect.cliniciansect .offerflexbox {
+        flex-direction: column;
+    }
+
+    .delboxflx .offheading {
+        margin-left: 0px;
+        text-align: center;
+        margin-bottom: 30px;
+        max-width: 100%;
+    }
+
+    .delboxflx {
+        flex-direction: column;
+        gap: 20px 0px;
+    }
+
+    .offeringsect.cliniciansect .offcont {
+        max-width: 100%;
+        text-align: center;
     }
 
     /* our team */
@@ -533,6 +543,17 @@
     .index_offering .offlist::before {
         display: none;
     }
+
+    .bantextcont h1 {
+        font-size: 45px;
+        line-height: 48px;
+    }
+
+    .bantextcont {
+        max-width: 409px;
+    }
+
+    /* home page 15.01.23 */
 
     /* services page strt 15.01.2024-- */
     .info_num::after {
@@ -614,26 +635,6 @@
         margin: 70px auto 0;
     }
 
-    .offeringsect.cliniciansect .offerflexbox {
-        flex-direction: column;
-    }
-
-    .delboxflx .offheading {
-        margin-left: 0px;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-    .delboxflx {
-        flex-direction: column;
-        gap: 20px 0px;
-    }
-
-    .offeringsect.cliniciansect .offcont {
-        max-width: 100%;
-        text-align: center;
-    }
-
     .maincontp p {
         text-align: center;
     }
@@ -700,14 +701,17 @@
         margin-top: 30px;
     }
 
-    .bantextcont h1 {
-        font-size: 45px;
-        line-height: 48px;
-    }
-
     .pioneeringsection.whaitbg .headingsect p {
         line-height: 28px;
         font-size: 21px;
+    }
+
+    .bantextcont h1 {
+        font-size: 40px;
+        line-height: 40px;
+        text-align: right;
+        max-width: 300px;
+        margin-left: auto;
     }
 
     /* home page */
@@ -996,6 +1000,7 @@
     .report_box+.report_box {
         margin-top: 85px;
     }
+
     /* helth report */
 
     /* home page */
@@ -1064,6 +1069,17 @@
     }
 
     /*--services page--- */
+
+    /* home page */
+    .bantextcont h1 {
+        font-size: 40px;
+        line-height: 42px;
+        text-align: right;
+        max-width: 265px;
+        margin-left: auto;
+    }
+
+    /* home page */
 }
 
 @media (max-width: 420px) {

@@ -11,9 +11,9 @@ $(".bios_slick").slick({
   fade: true,
   slidesToShow: 1,
   slidesToScroll: 1,
-  adaptiveHeight: false,
-  centerMode: false,
-  variableWidth: false,
+  adaptiveHeight: true,
+  // centerMode: false,
+  // variableWidth: false,
 });
 
 // mobile navigatino....................
