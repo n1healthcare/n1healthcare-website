@@ -899,7 +899,9 @@ img {
 }
 
 .join_frm_wrp input {
-  width: 345px;
+  max-width: 345px;
+  width: 100%;
+  flex: 1;
   height: 42px;
   padding: 10px 15px;
   border: 1px solid #EDFFF8;
@@ -919,7 +921,8 @@ img {
 .join_frm_wrp button {
   width: 120px;
   height: 42px;
-  padding: 10px 30px;
+  padding: 10px;
+  flex: 0 0 auto;
   background: #92CCB7;
   color: #fff;
   font-family: "Helvetica";
@@ -1149,7 +1152,6 @@ img {
   color: #ffffffe6;
   line-height: 27px;
   opacity: 0.72;
-  font-weight: 300;
 }
 
 .report_box .report_dtls+.report_dtls {
@@ -1172,6 +1174,7 @@ img {
   line-height: 27px;
   max-width: 973px;
   margin: 0 auto;
+  font-weight: 300;
 }
 
 .report_more_info p+p {
@@ -1771,30 +1774,6 @@ footer p a:hover {
 
 }
 
-/* .ben_num {
-  width: 69px;
-  height: 69px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.38);
-  position: absolute;
-  top: -24px;
-  left: 45px;
-  background-color: #547267;
-}
-
-.ben_num p {
-  color: #FFF;
-  font-family: 'Poppins', sans-serif;
-  font-size: 29px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 25px;
-  letter-spacing: -0.29px;
-} */
-
 .bend h3 {
   color: #FFF;
   font-family: "Quincy";
@@ -1853,6 +1832,7 @@ footer p a:hover {
 
 .bend_left h3 {
   max-width: 300px;
+  font-family: "Quincy";
 }
 
 /*---benefits section end--- */
@@ -2052,6 +2032,7 @@ footer p a:hover {
 .faq_wrp {
   background: #EDFFF8;
   padding-bottom: 200px;
+  margin-top: -2px;
 }
 
 .faq_wrp .faq_hdr {
@@ -2148,14 +2129,13 @@ footer p a:hover {
   font-style: normal;
   font-weight: 400;
   line-height: 25px;
-  /* 156.25% */
   letter-spacing: -0.16px;
   opacity: 0.69;
 }
 
 .prvcy_details {
   border-bottom: 1px solid rgba(0, 0, 0, 0.09);
-  padding-bottom: 59px;
+  padding-bottom: 40px;
 }
 
 .privcy_sec h5 {
@@ -2165,7 +2145,6 @@ footer p a:hover {
   font-style: normal;
   font-weight: 400;
   line-height: 42px;
-  /* 190.909% */
   letter-spacing: -0.22px;
   margin-bottom: 23px;
 }
@@ -2176,7 +2155,6 @@ footer p a:hover {
   font-style: normal;
   font-weight: 400;
   line-height: 25px;
-  /* 156.25% */
   letter-spacing: -0.16px;
   opacity: 0.69;
 }
@@ -2232,7 +2210,6 @@ footer p a:hover {
   font-style: normal;
   font-weight: 600;
   line-height: 25px;
-  /* 156.25% */
   letter-spacing: -0.16px;
   margin-bottom: 29px;
 }
@@ -2258,7 +2235,7 @@ footer p a:hover {
   height: 12px;
   top: 50%;
   left: 0;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
   filter: opacity(100%);
 }
 
@@ -2280,3 +2257,10 @@ footer p a:hover {
 }
 
 /* 16.01.24 privecy_policy start*/
+
+/* 17.01.24 */
+.slick-dots li button:before {
+  display: none;
+}
+
+/* 17.01.24 */
