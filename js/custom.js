@@ -3,7 +3,7 @@ $(".bios_slick").slick({
   dots: true,
   arrows: false,
   infinite: true,
-  autoplay: true,
+  autoplay: false,
   speed: 1100,
   autoplaySpeed: 3300,
   cssEase: "ease",

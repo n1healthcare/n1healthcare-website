@@ -92,8 +92,8 @@
     /* about page */
 
     /* our team */
-    .fmenulist {
-        gap: 0px 20px;
+    .fmenulist li:not(:last-child) {
+        margin-right: 20px;
     }
 
     .footmenuflx .footlogo {
@@ -423,7 +423,11 @@
     /* our team */
     .footmenuflx {
         flex-direction: column;
-        gap: 40px 0px;
+        /* gap: 40px 0px; */
+    }
+
+    .footmenuflx>*:not(:last-child) {
+        margin-bottom: 40px;
     }
 
     footer .formflex .form-control {
@@ -668,7 +672,7 @@
     }
 
     .fmenulist {
-        gap: 20px;
+        /* gap: 20px; */
         justify-content: center;
         flex-wrap: wrap;
     }
@@ -899,6 +903,14 @@
     }
 
     /* faq page 17.01.24 start*/
+
+
+    /* footer */
+    .footmenuflx>*:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+    /* footer */
 }
 
 @media (max-width: 575px) {
