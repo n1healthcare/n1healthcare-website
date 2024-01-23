@@ -172,19 +172,19 @@ h1 {
   letter-spacing: -1.62px;
 }
 
-h2 {}
-
-h3 {}
-
-h4 {}
-
-h5 {}
-
 /*===== Global CSS ======*/
 
 /***** navbar start *************/
-.navbar_brand img {
-  max-width: 38px;
+.footlogo>img {
+  max-width: 220px;
+  width: 100%;
+  display: block;
+}
+
+.navbar_brand>img {
+  max-width: 220px;
+  width: 100%;
+  display: block;
 }
 
 .hedr {
@@ -242,15 +242,6 @@ h5 {}
 
 .navbar .nav_item+.nav_item {
   margin-left: 45px;
-}
-
-.navbar_brand {
-  color: #FFF;
-  font-family: "Quincy";
-  font-size: 29px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .navbar_brand:hover {
@@ -1399,7 +1390,7 @@ footer {
   font-weight: 400;
   line-height: 42px;
   font-family: "Quincy";
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .footheading h5 {
@@ -1446,13 +1437,6 @@ footer .formflex .loginbtn {
   border-bottom: 1px solid #e4dbd642;
 }
 
-.footmenuflx .footlogo {
-  color: #FFF;
-  font-family: "Quincy";
-  font-size: 29px;
-  font-style: normal;
-  font-weight: 400;
-}
 
 .footmenuflx .ftemail {
   color: #FFF;

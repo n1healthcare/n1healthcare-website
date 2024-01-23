@@ -96,10 +96,6 @@
         margin-right: 20px;
     }
 
-    .footmenuflx .footlogo {
-        font-size: 26px;
-    }
-
     .offeringsect.cliniciansect .offcont {
         max-width: 500px;
     }
@@ -963,10 +959,6 @@
         padding: 0px;
     }
 
-    .navbar_brand {
-        font-size: 22px;
-    }
-
     .bantextcont.tembancont {
         margin: 0px auto 0;
     }
@@ -1015,7 +1007,7 @@
     .footheading h2 {
         font-size: 25px;
         line-height: 33px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     footer .formflex {
@@ -1138,6 +1130,19 @@
     }
 
     /* privecy policy 17.01.24 */
+
+    /* footer logo 23.01.24 */
+    .footlogo>img {
+        max-width: 200px;
+        width: 100%;
+    }
+
+    .navbar_brand>img {
+        max-width: 150px;
+        width: 100%;
+    }
+
+    /* footer logo 23.01.24 */
 }
 
 @media (max-width: 480px) {
