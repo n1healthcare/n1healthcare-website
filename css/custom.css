@@ -482,19 +482,13 @@ img {
 } */
 
 .headingsect p {
-  color: #ffffff;
+  color: #fff;
   line-height: 42px;
   font-size: 31px;
   font-family: "Quincy";
   font-weight: 400;
   text-align: center;
- 
 }
-
-/* .pioneeringsection.technicalsect.headingsect{
-  max-width: 994px;
-} */
-
 
 .headingsect p+p {
   margin-top: 10px;
